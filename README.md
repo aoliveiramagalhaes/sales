@@ -4,7 +4,7 @@
 ### How to start express
 
 ```shell
-yarn node app.js
+yarn start
 ```
 
 ### Git basic commands
@@ -22,7 +22,7 @@ git status
 # or gst
 
 # I know!
-git commit -m "Message" 
+git commit -m "Message"
 # gc -m
 
 git log
@@ -31,4 +31,4 @@ git log
 # push changes to a remote repository (GitHub)
 git push
 # gp
-``` 
+```
