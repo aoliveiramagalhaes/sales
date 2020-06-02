@@ -31,4 +31,7 @@ git log
 # push changes to a remote repository (GitHub)
 git push
 # gp
+
+# pull changes from GitHub
+git pull
 ```
