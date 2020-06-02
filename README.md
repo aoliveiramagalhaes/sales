@@ -15,15 +15,20 @@ git init
 
 # add file
 git add <FILE,>
+# or ga
 
 # verify status
 git status
+# or gst
 
 # I know!
 git commit -m "Message" 
+# gc -m
 
 git log
+# glg
 
 # push changes to a remote repository (GitHub)
 git push
+# gp
 ``` 
