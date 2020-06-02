@@ -1,7 +1,7 @@
 ## Notes
 
 
-### How to start express
+### How to start server (Express)
 
 ```shell
 yarn start
