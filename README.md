@@ -7,6 +7,9 @@
 yarn start
 ```
 
+to find my folders and files, click on File/ Recent
+
+
 ### Git basic commands
 
 ```shell
