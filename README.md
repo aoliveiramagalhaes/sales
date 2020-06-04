@@ -20,6 +20,10 @@ git init
 git add <FILE,>
 # or ga
 
+# to know where I'm
+pwd
+# pwd
+
 # verify status
 git status
 # or gst
@@ -30,6 +34,10 @@ git commit -m "Message"
 
 git log
 # glg
+
+# exit server
+control c
+#controlc
 
 # push changes to a remote repository (GitHub)
 git push
