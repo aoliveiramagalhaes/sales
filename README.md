@@ -46,7 +46,7 @@ git push
 cd ..
 
 # to list all directories (must be in home)
-ls -1
+ls -l
 
 # pull changes from GitHub
 git pull
