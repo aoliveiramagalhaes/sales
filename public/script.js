@@ -3,7 +3,7 @@ function concat(arg1, arg2) {
 }
 
 function hello(name) {
-    const msg = concat('Hello World,', name)
+    const msg = concat('New Test', name)
     alert(msg)
 }
 
@@ -15,5 +15,5 @@ function sum(a, b) {
 // result => 3
 
 // hello(result)
-hello('Aline')
-hello('Pablo')
+hello('Done')
+hello('Done again')
