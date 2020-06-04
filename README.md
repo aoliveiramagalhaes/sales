@@ -22,7 +22,6 @@ git add <FILE,>
 
 # to know where I'm
 pwd
-# pwd
 
 # verify status
 git status
@@ -42,6 +41,12 @@ control c
 # push changes to a remote repository (GitHub)
 git push
 # gp
+
+# change directory
+cd ..
+
+# to list all directories (must be in home)
+ls -1
 
 # pull changes from GitHub
 git pull
