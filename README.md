@@ -51,12 +51,17 @@ ls -l
 
 # pull changes from GitHub
 git pull
+```
 
-// to copy the name of the file, click on the name of the file and command V. No need to command C.
+to copy the name of the file, click on the name of the file and command V. No need to command C.
 
 Keep one tab in the terminal for the server and add a new tab for the other stuff. To add a new tab command T.
 
 to open my folders, go to the Visual Studio Code/ File/ Open recent
 
+command r to refresh the browser
 
-```
+backtick (name of the thing) ```
+string entre aspas " " with content   "" empty
+&& and
+|| or

@@ -28,7 +28,11 @@ buttonSum.addEventListener("click", function(event) {
     const inputA = document.getElementById("input-a")
     const inputB = document.getElementById("input-b")   
     const inputResult = document.getElementById("input-result")
-
+    if(inputA.value === "" || inputB.value === "") {
+        alert("Please enter values")
+        inputResult.value = ""
+        return
+    }
 
     // int => Integer = Number = 1, 1000, 1000000. No decimals.
     // parseInt: to let JS know that it's a number, so JS can do the math.
