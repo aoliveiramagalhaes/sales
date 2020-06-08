@@ -79,3 +79,50 @@ Programming is the mental process of thinking up instructions to give to a machi
 Coding is the process of transforming those ideas into a written language that a computer can understand.
 
 in programming, we have a way of storing values so that we can reuse them throughout our program or change them, if necessary. This concept is known as a variable.
+
+https://getbootstrap.com/ - templates
+
+In computing, data is the pieces of information that we use to build programs, like the numbers in a calculation, or the text printed to a screen.
+
+we surround strings with single ('...') or double quotes ("...").
+
+Boolean values represent the logical ideas of true and false.
+
+Comparison operators include:
+
+Less than < — value to the left is less than the value to the right: 2 < 6
+Greater than > — value to the left is more than the value to the right: 14 > 5
+Equals == — value to the left is equal to the value to the right: 3 == 3
+Note: we use a double-equal sign to show that we’re checking a value, rather than setting it equal to something, like we would with a variable. Some languages even use a triple-equal sign === to super-triple-check!
+
+for loop
+for (i = 0; i < 10; i++) {
+  placeTile('mint')
+  placeTile('orange')
+  placeTile('mint')
+}
+i++ = i += 1 o valor dele + 1
+i = i + 1
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi"); 2 == position that I want to add the new item. 0 == how many items I want to remove from the list. 
+Banana,Orange,Lemon,Kiwi,Apple,Mango
+
+function myFunction() {
+  fruits.splice(2, 1, "Lemon", "Kiwi");
+  Banana,Orange,Lemon,Kiwi,Mango
+  2 == Apple was in position number 2. I said I wanted to remove one item. Everything starts counting on position 2. I add or remove items starting from this position, that's the reason Apple was removed when I said I wanted to remove one item.
+
+
+
+array.splice(index, howmany, item1, ....., itemX)
+
+Parameter	Description
+index	Required. An integer that specifies at what position to add/remove items, Use negative values to specify the position from the end of the array
+howmany	Optional. The number of items to be removed. If set to 0, no items will be removed
+item1, ..., itemX	Optional. The new item(s) to be added to the array
+
+A function is a specific set of repeatable instructions that takes an input, like a strawberry plant, and produces an output, like freshly picked strawberries. 
+
+
+
