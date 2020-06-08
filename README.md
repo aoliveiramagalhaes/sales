@@ -52,7 +52,7 @@ ls -l
 # pull changes from GitHub
 git pull
 ```
-
+in the terminal, enter code . to open VS Code in the current directory
 to copy the name of the file, click on the name of the file and command V. No need to command C.
 
 Keep one tab in the terminal for the server and add a new tab for the other stuff. To add a new tab command T.
