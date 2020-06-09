@@ -113,7 +113,12 @@ function myFunction() {
   Banana,Orange,Lemon,Kiwi,Mango
   2 == Apple was in position number 2. I said I wanted to remove one item. Everything starts counting on position 2. I add or remove items starting from this position, that's the reason Apple was removed when I said I wanted to remove one item.
 
+The push() method adds new items to the end of an array, and returns the new length. Note: The new item(s) will be added at the end of the array. Note: This method changes the length of the array.
+array.push(item1, item2, ..., itemX)
 
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+Banana,Orange,Apple,Mango,Kiwi
 
 array.splice(index, howmany, item1, ....., itemX)
 
