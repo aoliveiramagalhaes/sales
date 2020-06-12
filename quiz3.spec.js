@@ -44,3 +44,21 @@ it("returns NPS score", () => {
     expect(nps(8)).toEqual("passives")
     expect(nps(9)).toEqual("promotors")
 });
+
+it("returns occurrences of word", () => {
+    function countOccurrences(array, word) {
+        let count = 0
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === word) {
+                count++
+            }
+        }    
+
+        return count
+    }
+
+    expect(countOccurrences(['apple', 'apple', 'melon'], 'melon')).toEqual(1)
+    expect(countOccurrences(['apple', 'apple', 'melon'], 'apple')).toEqual(2)
+    expect(countOccurrences(['apple', 'apple', 'melon', 'apple', 'kiwi'], 'banana')).toEqual(0)
+})
