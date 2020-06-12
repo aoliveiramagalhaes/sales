@@ -62,3 +62,54 @@ it("returns occurrences of word", () => {
     expect(countOccurrences(['apple', 'apple', 'melon'], 'apple')).toEqual(2)
     expect(countOccurrences(['apple', 'apple', 'melon', 'apple', 'kiwi'], 'banana')).toEqual(0)
 })
+
+it("returns occurrences of number", () => {
+    function countOccurrences(array, number) {
+        let count = 0
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === number) {
+                count++
+            }
+            
+        }
+
+        return count
+    }
+
+    expect(countOccurrences([10, 12, 50, 50], 10)).toEqual(1)
+    expect(countOccurrences([10, 10, 40, 60], 10)).toEqual(2)
+    expect(countOccurrences([10, 60, 30, 20, 90], 80)).toEqual(0)
+})
+
+it("returns if odd or even", () => {
+    function oddOrEven(number) {
+        if(number % 2 === 0) {
+            return "even"
+        } else {
+            return "odd"
+        }
+    }
+
+    expect(oddOrEven(1)).toEqual("odd")
+    expect(oddOrEven(2)).toEqual("even")
+})
+
+it("returns occurrences of even number", () => {
+    function countEvenNumbers(array) {
+        let count = 0
+
+        for (let i = 0; i < array.length; i++) {
+            if(array[i] % 2 === 0) {
+                count++
+            }
+            
+        }
+
+        return count
+    }
+
+    expect(countEvenNumbers([3, 9, 5, 1])).toEqual(0)
+    expect(countEvenNumbers([2, 1, 1, 1, 1])).toEqual(1)
+    expect(countEvenNumbers([2, 10, 3, 3])).toEqual(2)
+})
