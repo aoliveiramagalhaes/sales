@@ -113,3 +113,57 @@ it("returns occurrences of even number", () => {
     expect(countEvenNumbers([2, 1, 1, 1, 1])).toEqual(1)
     expect(countEvenNumbers([2, 10, 3, 3])).toEqual(2)
 })
+
+it("returns difference in days", () => {
+    function dateDiffInDaysFromToday(date) {
+        let today = new Date() // today in JS
+        let diffInMS = today.getTime() - date.getTime() // difference between two dates in milliseconds
+
+        let diffInSec = diffInMS / 1000 // convert from milliseconds to seconds
+        let diffInMin = diffInSec / 60 // convert from sec to min
+        let diffInHour = diffInMin / 60
+        let diffInDay = diffInHour / 24
+
+        // var diffInDay = diffInMS / (1000 * 3600 * 24)
+
+        return parseInt(diffInDay) // convert float to integer so that we ignore hour diff within days
+    }
+
+    expect(dateDiffInDaysFromToday(new Date("06/12/2020"))).toEqual(0)
+    expect(dateDiffInDaysFromToday(new Date("06/10/2020"))).toEqual(2)
+    expect(dateDiffInDaysFromToday(new Date("05/12/2020"))).toEqual(31)
+})
+
+
+it("returns due date status", () => {
+    function getDueDateStatus(today, date) {
+        // let today = new Date("06/12/2020") // today in JS
+        let diffInMS = date.getTime() - today.getTime() // difference between two dates in milliseconds
+
+        let diffInSec = diffInMS / 1000 // convert from milliseconds to seconds
+        let diffInMin = diffInSec / 60 // convert from sec to min
+        let diffInHour = diffInMin / 60 // convert min to hour
+        let diffInDay = parseInt(diffInHour / 24) // convert hour to day. this is the diff in days 
+
+        //if(diffInDay <= 30) {
+        
+        if (diffInDay < 30 && diffInDay > 0) {
+            return "Due in <30 days"
+        } else if (diffInDay < 60 && diffInDay > 0) {
+            return "Due in <60 days"
+        } else if (diffInDay > 90) {
+            return "Due in >90 days"
+        } else {
+            return "Past Due"
+        }
+    }
+        
+    // change date to match with > 90
+    expect(getDueDateStatus(new Date("06/12/2020"), new Date("06/15/2020"))).toEqual("Due in <30 days")
+    expect(getDueDateStatus(new Date("06/12/2020"), new Date("07/13/2020"))).toEqual("Due in <60 days")
+    expect(getDueDateStatus(new Date("06/12/2020"), new Date("09/12/2020"))).toEqual("Due in >90 days")
+    expect(getDueDateStatus(new Date("05/12/2020"), new Date("06/11/2020"))).toEqual("Past Due")
+    // add expect for 60
+    // add expect for 30
+    // add expect for past 
+})
